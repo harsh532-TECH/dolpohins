@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page example using HTML and CSS">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- External Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">BrandName</h1>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>   
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Welcome to Our Service</h2>
+            <p>We provide top-notch solutions to boost your business.</p>
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Build responsive, high-performance websites with cutting-edge technology.</p>
+            </div>
+            <div class="service-item">
+                <h3>SEO Optimization</h3>
+                <p>Boost your search rankings and increase visibility online.</p>
+            </div>
+            <div class="service-item">
+                <h3>App Development</h3>
+                <p>Create mobile apps for iOS and Android to engage users on the go.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial-item">
+                <p>"Great service and support!" - Client A</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Exceeded expectations." - Client B</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"The team was professional and knowledgeable." - Client C</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>How long does the service take?</h3>
+                <p>It depends on the complexity of the project, but typically between 2-4 weeks.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What makes your services unique?</h3>
+                <p>We combine expertise with innovative solutions to meet the unique needs of each client.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 BrandName. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
